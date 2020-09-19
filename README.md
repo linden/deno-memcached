@@ -21,5 +21,5 @@ await client.update("Hello", "there", 1800);
 await client.delete("Hello");
 
 //flush
-await sclient.flush();
+await client.flush();
 ```
