@@ -39,7 +39,7 @@ export class Memcached {
         await this.request(`replace ${key} 0 ${lifetime} ${value.length}\r\n${value}\r\n`);
     }
     
-    async del(key: string) {
+    async delete(key: string) {
         await this.request(`delete ${key}\r\n`);
     }
 
